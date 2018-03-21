@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.moesystems.contador.MainActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<RelativeLayout
+    android:id="@+id/rl1"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/teama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team A"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+         />
+    <TextView
+        android:id="@+id/cont1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/teama"
+
+        />
+    <Button
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_uno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cont1"
+        android:text="+1"
+        /><Button
+    android:layout_centerHorizontal="true"
+        android:id="@+id/btn_dos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_uno"
+        android:text="+2"
+        /><Button
+    android:layout_centerHorizontal="true"
+        android:id="@+id/btn_tres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_dos"
+        android:text="+3"
+
+        />
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            >
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/teamb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team B"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:id="@+id/cont2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="50sp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/teamb"
+
+                />
+            <Button
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btn_cuatro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cont2"
+                android:text="+1"
+                />
+            <Button
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btn_cinco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_cuatro"
+                android:text="+2"
+            />
+            <Button
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btn_seis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_cinco"
+                android:text="+3"
+
+            />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:layout_marginLeft="150dp"/>
+
+</LinearLayout>
